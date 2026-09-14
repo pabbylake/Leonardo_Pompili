@@ -8,7 +8,7 @@ Bit - Smallest united of data represented by 0 or 1.
 
 Byte - a contagious sequence of eight bits.
 
-1024 bytes =kilobyte, 1024 kilobytes = gigabyte, 1024 gigabytes = terabyte.
+1024 bytes =kilobyte, 1024 kilobytes = megabyte, 1024 megabyte = terabyte.
 
 Binary, decimal, and hex conversions - converting between bases 2,10, and 16.
 
@@ -28,7 +28,7 @@ JDK - Java Development Kit
 API - Application programming Interface (tools that help developers).
 AWT - Abstract Window Toolkit
 Class - An object's definition consisting of attributes, constructors, and behaviors.
-Object - A specific instance of a class.
+Object - A specific instance of a class (8 bytes).
 Method - An action. Or behavior that an object or a class performs.
 Main Method - The only method needed to create an app
 Syntax error - Incorrectly writ encode that causes a failure in program execution
