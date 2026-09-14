@@ -1,3 +1,81 @@
 Awesome
 
 Hi!!
+
+1.1 Vocab Notes:
+
+Bit - Smallest united of data represented by 0 or 1.
+
+Byte - a contagious sequence of eight bits.
+
+1024 bytes =kilobyte, 1024 kilobytes = gigabyte, 1024 gigabytes = terabyte.
+
+Binary, decimal, and hex conversions - converting between bases 2,10, and 16.
+
+Application software- computer program(s) designed for end users (examples: word, iTunes).
+
+System software - platform for application software (windows, macOS, iOS).
+
+Primary memory - temporary memory (cache, RAM).
+
+Secondary Memory - Permanent memory (hard drive, database, file).
+
+Ram - Random Access Memory (working memory)
+
+JRE - Java Runtime Environment
+JVM - Java Virtual Machine
+JDK - Java Development Kit
+API - Application programming Interface (tools that help developers).
+AWT - Abstract Window Toolkit
+Class - An object's definition consisting of attributes, constructors, and behaviors.
+Object - A specific instance of a class.
+Method - An action. Or behavior that an object or a class performs.
+Main Method - The only method needed to create an app
+Syntax error - Incorrectly writ encode that causes a failure in program execution
+Logic Error - Error in code that causes incorrect or unexpected results
+Protocol - A communication standard (example: Raising your hand in order to speak).
+TCP/IP - Transmission Control Protocol/Internet Protocol to access the web, such as searching something up.
+WWW- World Wide Web.
+HTTP - Hypertext Transfer Protocol -> HTTPS - HTTP Secured.
+Variable - A quantity that changes
+Constant - A quantity that does not change.
+
+Types of Variables - int,double,String,char,boolean,long,short,float,byte,object
+
+Primitive Data Types
+Int-Integer variable type that is 4 bytes in size.
+Double - decimal variable type that is 8 bytes in size
+Char - a single character variable type that is 2 bytes
+Boolean - a true/false variable type that is 1 bit
+Long - integer variable type that is 8 bytes
+Short - integer variable type that is 2 bytes
+Float - a decimal variable type that is 4 bytes 
+Byte - an integer data type that is 1 byte (stores: 128 to 127)
+Note: object is a complex data type not a primitive data type
+Scope - Variable visibility
+
+Integers - + ,- ,*,/,%, compound operators, pre-increment, post increment
+Boolean logic - And (&,&) Or (||), Not (!)
+Truth table - Mathematical table used to show boolean logic
+
+DE Morgan's Laws - factoring and distributing a NOT
+
+Control structures - sequential, if, else, switch, while do...while, for
+	Sequential - one step at a time
+	Selection if, else, switch
+	Repetition - while,do...while, for
+
+Random Number - a generated integer or double using the Random or Math API
+
+Getter - an accessor method used to give access to a private instance variable (attribute)
+Setter - a mutator method used to change a private instance variable (attribute)
+
+One Dimensional Array - a data used to store data in an indexed list format
+Two Dimensional Array - a Dara structure used to store data in an indexed tabular format
+
+Arraylist - a dynamic array used to store data in an indexed list format with the ability to grow and shrink during program execution.
+
+END-------------------------------------------------------
+
+
+
