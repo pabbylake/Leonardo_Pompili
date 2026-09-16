@@ -4,9 +4,9 @@ Hi!!
 
 1.1 Vocab Notes:
 
-Bit - Smallest united of data represented by 0 or 1.
+Bit - Smallest unit of data represented by 0 or 1.
 
-Byte - a contagious sequence of eight bits.
+Byte - a contiguous sequence of eight bits.
 
 1024 bytes =kilobyte, 1024 kilobytes = megabyte, 1024 megabyte = terabyte.
 
@@ -76,6 +76,18 @@ Two Dimensional Array - a Dara structure used to store data in an indexed tabula
 Arraylist - a dynamic array used to store data in an indexed list format with the ability to grow and shrink during program execution.
 
 END-------------------------------------------------------
+
+1.2 ASCII Table (American Standard Code for Information Interchange).
+
+All keys on a keyboard have a numerical value.
+
+Trying to show how the computer set these characters.
+
+For f,
+
+7x10^1 + 0x10^0=70 (decimal)
+
+
 
 
 
