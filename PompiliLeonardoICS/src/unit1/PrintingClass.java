@@ -22,9 +22,9 @@ public class PrintingClass
 		System.out.println("Good");
 		
 		System.out.println("\"hello\"");
-		System.out.println("\\")
-		System.out.println("\thelp")
-		//Syntax error: can't print without nothing if you don't put a new line
+		System.out.println("\\");
+		System.out.println("\thelp");
+		//Syntax error:041 can't print without nothing if you don't put a new line
 		//To print a quote you have to use "\""
 		//To print \, you have to use "\\"
 		// \t means tab and \n means new line
