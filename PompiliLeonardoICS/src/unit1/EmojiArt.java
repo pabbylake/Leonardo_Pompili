@@ -13,7 +13,7 @@ public class EmojiArt
         System.out.println("\t  🌲     | 🛗 📶  🚽    🪟🚪🪟   🛋️🛋️ 📺     🔪⏲️      🚪|🚲🛹   🌲    🛻🚗🚗🏍️🏎️       🌲     🐎      📪      ___🛩️________________________  🌲     🏈 ⚽ 🥅    🌲          🏖️🏖️ 🌊🌊⛵🛥️🌊                  "); 
         System.out.println("\t         | 🛗       🚽     🧖                     🏊🛟️     |"); 
         
-       System.out.println("\n🎉 Your turn! Create your own design 🎨");
+       
 		
 		
 		
