@@ -7,9 +7,9 @@ public class EmojiArt
 	{
 	    System.out.println("\t ☁️🌞 🍂      ___🚁👩‍✈️_______🪻🪻🌻🌻🌵🌵🪴🪴_____🔭____           🍂       "); // roof
         System.out.println("\t            /🪟  🧻  💩   🚽🪟🛁        🛌    📶   🪟\\                       "); 
-        System.out.println("\t   🍂      /🪟  🛏️  🚽  🎮  🎰️  🪟  🏓     🖼    ️📶🪟\\      🍂           🍂  "); 
+        System.out.println("\t   🍂      /🪟  🛏️  🚽  🎮  🎰️  🪟  🏓     🖼    ️📶🪟\\      🍂                                  🍂  "); 
         System.out.println("\t          /🪟📶   🛏⛸  🎯️️ 🐒   🪟  🐕🐈   🚽        🪟\\               🍂   ");
-        System.out.println("\t    🍂    -------------------------------------------------          🍂       🍂"); 
+        System.out.println("\t    🍂    -------------------------------------------------          🍂                        🍂"); 
         System.out.println("\t  🌲     | 🛗 📶  🚽    🪟🚪🪟   🛋️🛋️ 📺     🔪⏲️      🚪|🚲🛹   🌲    🛻🚗🚗🏍️🏎️       🌲     🐎      📪      ___🛩️________________________  🌲     🏈 ⚽ 🥅    🌲          🏖️🏖️ 🌊🌊⛵🛥️🌊                  "); 
         System.out.println("\t         | 🛗       🚽     🧖                     🏊🛟️     |"); 
         
