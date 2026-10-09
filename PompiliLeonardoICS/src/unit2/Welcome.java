@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Container;
 import java.awt.Font;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -13,13 +14,13 @@ public class Welcome extends JFrame
 
 	private Container contentPane;
 	private JPanel welcomePanel;
-	private JLabel textlabel, pictureLabel;
+	private JLabel textLabel, pictureLabel;
 	
 	
 	//no-arguement constructor
 	public Welcome()
 	{
-	
+		this.createUserInterface();
 	}
 	
 	
@@ -63,7 +64,8 @@ public class Welcome extends JFrame
 	//set up window
 	private void setUpWindow()
 	{
-		this.setSize(608,413);
+		//this.setSize(608,413);
+		this.setBounds(0, 0, 608, 413);
 		this.setTitle("Welcome");
 		this.setVisible(true);
 		this.setResizable(false);
@@ -77,9 +79,10 @@ public class Welcome extends JFrame
 	private void createUserInterface()
 	{
 		this.setUpContentPane();
-		welcomePanel = this.setUpPanel(welcomepanel, 10, 10, 588, 373)
-		textLabel = this.setUpLabel(label, text, x, y, width, height)
-		pictureLabel = this.setUpLabel(label, text, x, y, width, height)
+		welcomePanel = this.setUpPanel(welcomePanel, 10, 10, 588, 373);
+		textLabel = this.setUpLabel(textLabel, "Welcome to Java!", 22, 0, 550, 88);
+		pictureLabel = this.setUpLabel(pictureLabel, "", 150, 70, 300, 300);
+		pictureLabel.setIcon(new ImageIcon("src/unit2/images/java.jpg"));
 		this.setUpWindow();
 		
 		
@@ -91,8 +94,8 @@ public class Welcome extends JFrame
 	public static void main(String[] args) 
 	{
 		
-		
-		
+		Welcome app = new Welcome(); //instance of a class = object
+		app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 	}
 
