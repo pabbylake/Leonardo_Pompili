@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.Container;
 import java.awt.Font;
 
-import javax.swing.Imageicon;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;//abstract window tool kit
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -20,7 +20,7 @@ public class Poster extends JFrame
 	
 	private JLabel basketballLabel; //image
 	
-	
+	private JLabel basketballlabel2;
 	
 	
 	//Constructor - default
@@ -41,16 +41,19 @@ public class Poster extends JFrame
 		titleLabel.setForeground(Color.black);
 		
 		basketballLabel =
-		this.setUpLabel(basketballLabel,"", 100, 200, 300, 300);
-		basketballLabel.setIcon(new Imageicon(""));
+		this.setUpLabel(basketballLabel,"", 700, 600, 500, 500);
+		basketballLabel.setIcon(new ImageIcon("src/unit2/images/java.jpg"));
 		
+		basketballlabel2 =
+		this.setUpLabel(basketballlabel2,"", 100, 100, 750, 750);
+		basketballlabel2.setIcon(new ImageIcon("src/unit2/images/java2.jpg"));
 		
 		this.setUpWindow();//last
 		// in between is where the poster "the meat" goes
 		
 	}
 	
-	
+
 	
 	
 	
