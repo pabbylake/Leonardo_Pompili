@@ -57,6 +57,92 @@ public class UnitThree
 		
 		System.out.println(cost);
 		System.out.println(value);
+		
+		//Variable Calculations - 3.4
+		
+		//Order of Operations:
+		//Parentheses, Exponent, {Multiply, Divide Modulus}, {Add, Subtract}
+		//Example 1
+		//value = 10 / 3 * 2 % (8 % 4); bad code
+		//10 / 4 * 2 % 0
+		//3 * 2 % 0
+		//6 % 0 Error - Divide by zero exception
+		//System.out.println(value);
+		
+	
+		//Example 2
+		value = ((6-2) / (6/3)) % (2%5) / (9/3);
+		System.out.println(value);
+		
+		
+		//Mixing Types
+		//Example 3
+		int n = 6;
+		double result;
+		result = (n+2) * n / 2; //24.0
+		System.out.println(result);
+		result = (n / 2) * (n - 1); //15.0
+		System.out.println(result);
+		result = (n / 7) * n * (n + 2); //0.0
+		System.out.println(result);
+		
+
+		//Example 4
+		int a=2, b = 3;
+		double ratio;
+		ratio = (double)a / b; //2.0/3.0 = 0.66666666667
+		System.out.println(ratio);
+		ratio = (double)(b / a);
+		System.out.print(ratio);
+		
+		//Compound Operations
+		//Example 5
+		a +=4; //a = 6
+		b +=a; //b = 9
+		a *=3; //a = 18
+		b %=a; //b = 9
+		a -=b; //b = 9
+		System.out.println(a + " " + b + 10 + true + new Integer(11)); //concatenating of String with numbers
+		
+		
+	
+		//Example 6
+		a = 2;
+		b = 4;
+		int c = 6;
+		a -= b + c; //a = -8
+		b *= a + c; //b = -8
+		c += a + b; //c = -10
+		System.out.println(a + "\n" + b + c);
+		
+		
+		
+		
+		//Pre/Post Incrementing and Decrementing - ONLY 1
+		//Example 7
+		System.out.println(++a);
+		System.out.println(--a);
+		System.out.println(b++);
+		System.out.println(b--);
+		a +=b++;
+		b -= ++a;
+		System.out.println(a + " " + b );
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		 
+		
+		
+		
+		
+		
+		
 
 	}
 
