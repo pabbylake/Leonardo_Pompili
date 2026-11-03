@@ -128,9 +128,32 @@ public class UnitThree
 		b -= ++a;
 		System.out.println(a + " " + b );
 		
+		//3.5 Strings Mr. Lake in person on white board notes
+		
+		//String S = "Hello";
+		//String S2 = new String("Hello");
+		
+		//a) Length => S.length () 5
+		//b) charAt    H (0) E (1) L (2) L (3) O (4) 
+		//c) Substring
 		
 		
+		//Strings - 3.5
+		//All about Strings
+		//Strings are immutable - unchangeable
+		//Strings are immutable sequences of characters
 		
+		//create a String
+		String classDescription = "Geometry is a good class"; //literal
+		String classDescription2 = new String("Gemoetry is a good class"); //constructor
+		/*
+		 * String API methods:
+		 * length(), charAt(i), substring (i,j), indexOf ("x"),
+		 * equals("other"), compareTo("other");
+		 * 
+		 * indexOf("x) and charAt(i) use indices
+		 * Visualization
+		 */
 		
 		
 		
