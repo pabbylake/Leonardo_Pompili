@@ -17,7 +17,7 @@ package unit3;
  * displayJLabel - 31, 13, 120, 30 - put the text "12:00" on this label✅
  * 
  * The buttons are listed with their bounds below.
- * oneJButton - 23, 56, 45, 45 -     put the text "1" on this button
+ * oneJButton - 23, 56, 45, 45 -     put the text "1" on this button✅
  * twoJButton - 68, 56, 45, 45 -     put the text "2" on this button
  * threeJButton - 113, 56, 45, 45 -  put the text "3" on this button
  * fourJButton - 23, 101, 45, 45 -   put the text "4" on this button
