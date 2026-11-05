@@ -124,6 +124,9 @@ public class Microwave extends JFrame
 
    		 //controlJPanel - 368, 16, 182, 284 
    		 controlJPanel = this.setUpPanel(controlJPanel, 368, 16, 182, 284);
+   		
+   		 //displayJLabel - 31, 13, 120, 30 - put the text "12:00" on this label
+   		 displayJLabel = this.setUpLabel(displayJLabel, "12:00", 31, 13, 120, 30);
    		 
    		 
 	 } // end method createUserInterface
