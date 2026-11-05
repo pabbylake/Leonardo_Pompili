@@ -14,7 +14,7 @@ package unit3;
  * controlJPanel - 368, 16, 182, 284 ✅
  * 
  * The label is listed with its bounds below.
- * displayJLabel - 31, 13, 120, 30 - put the text "12:00" on this label
+ * displayJLabel - 31, 13, 120, 30 - put the text "12:00" on this label✅
  * 
  * The buttons are listed with their bounds below.
  * oneJButton - 23, 56, 45, 45 -     put the text "1" on this button
