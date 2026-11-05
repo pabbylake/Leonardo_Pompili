@@ -10,8 +10,8 @@ package unit3;
  * a. createUserInterface - call the all of the appropriate methods in the right order. 
  * 
  * The panels are listed with their bounds below.
- * doorJPanel - 16, 16, 350, 284
- * controlJPanel - 368, 16, 182, 284 
+ * doorJPanel - 16, 16, 350, 284✅
+ * controlJPanel - 368, 16, 182, 284 ✅
  * 
  * The label is listed with its bounds below.
  * displayJLabel - 31, 13, 120, 30 - put the text "12:00" on this label
@@ -120,8 +120,12 @@ public class Microwave extends JFrame
    	 private void createUserInterface()
    	 {
    		 //doorJPanel - 16, 16, 350, 284
-   		 doorJPanel =this.setUpPanel(doorJPanel, 16, 16, 350, 284);
+   		 doorJPanel = this.setUpPanel(doorJPanel, 16, 16, 350, 284);
 
+   		 //controlJPanel - 368, 16, 182, 284 
+   		 controlJPanel = this.setUpPanel(controlJPanel, 368, 16, 182, 284);
+   		 
+   		 
 	 } // end method createUserInterface
    
    
