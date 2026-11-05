@@ -139,7 +139,7 @@ public class Microwave extends JFrame
    	 // main method
    	 public static void main( String[] args ) 
    	 {
-    		
+    		Microwave app = new Microwave();
 
     	 } // end method main
 
