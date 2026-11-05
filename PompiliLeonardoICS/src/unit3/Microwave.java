@@ -119,7 +119,9 @@ public class Microwave extends JFrame
    	 // create and position GUI components
    	 private void createUserInterface()
    	 {
-    		    	
+   		 //doorJPanel - 16, 16, 350, 284
+   		 doorJPanel =this.setUpPanel(doorJPanel, 16, 16, 350, 284);
+
 	 } // end method createUserInterface
    
    
