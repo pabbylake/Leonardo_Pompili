@@ -152,21 +152,111 @@ public class UnitThree
 		 * equals("other"), compareTo("other");
 		 * 
 		 * indexOf("x) and charAt(i) use indices
-		 * Visualization
+		 * Visualization of indexOf("x") and charAt(i) - each index corresponds to a character
+		 * [G] [e] [o] [m] [e] [t] [r] [y] [] [i] [s] [] [a] [] [g] [o] [o] [d] [] [c] [l] [a] [s] [s]
+		 *  0   1   2   3   4   5   6   7   8  9  10  11 12 13  14  15  16  17  18  19  20  21  22  23
+		 *  
+		 * substring(i,j) and substring(i) use a half close interval [i,j) for the indices
+		 *  | G | e | o | m | e | t | r | y |  | i | s |  | a |  | g | o | o | d |  | c | l | a | s | s |
+		 *  0   1   2   3   4   5   6   7   8  9  10  11  12  13 14  15  16  17 18  19 20  21  22  23  24
+		 *  
 		 */
 		
+		//Example 4:- Draw the console output and write code to print the sentences
+		System.out.println(classDescription.length());
+		System.out.println(classDescription.charAt(14) + classDescription.substring(20));
+		System.out.println(classDescription.substring(5, 8) + classDescription.charAt(8) +classDescription.substring(3, 5));
+		System.out.println(classDescription.indexOf("odd"));
+		System.out.println(classDescription.indexOf("o"));
+		System.out.println(classDescription.indexOf("met"));
+		System.out.println(classDescription.equals(classDescription2));
+		System.out.println(classDescription.indexOf("try"));
+		System.out.println(classDescription.substring(0));
+		System.out.println(classDescription.substring(0,24));
+		//System.out.println(classDescription.substring(0, 30)); Bad Code
 		
-		
-		
-		
-		 
-		
-		
-		
-		
-		
-		
+		/*
+		 * compareTo is a stronger comparison than equals.
+		 * It uses lexicographical("kinda" alphabetical) ordering for Strings
+		 * compareTo returns
+		 *  - 0 if the two Strings have the same characters in the same order
+		 *  - negative if the first String comes before the second
+		 *  - positive if the first String comes after the second
+		 */
 
+		 System.out.println("Hello".compareTo("hello")); //A,B,C,D,...Z,a,b,c,d,...z
+		 System.out.println("hello".compareTo("hello"));
+		 System.out.println("he".compareTo("hello"));
+		
+		/* Other useful String methods;
+		 * toCharArray(), replace(oldCharm newChar), replaceAll(regex, replacement), isEmplty(),
+		 * startsWith(prefix), endsWith(suffix), toUpperCase(), toLowerCase(), trim()
+		 * 
+		 * Write a line of code to print the following sentences using only classDescription
+		 * 
+		 * 1. "I am tall
+		 * 2. "Try to get good rest"
+		 * 3. "Meet me at class"
+		 * 4. "It is oddly a game"
+		 * 5. "I am last to get a retro style"
+		 * 
+		 * Visualization of indexOf("x") and charAt(i) - each index corresponds to a character
+		 * [G] [e] [o] [m] [e] [t] [r] [y] [] [i] [s] [] [a] [] [g] [o] [o] [d] [] [c] [l] [a] [s] [s]
+		 *  0   1   2   3   4   5   6   7   8  9  10  11 12 13  14  15  16  17  18  19  20  21  22  23
+		 *  
+		 * substring(i,j) and substring(i) use a half close interval [i,j) for the indices
+		 *  | G | e | o | m | e | t | r | y |  | i | s |  | a |  | g | o | o | d |  | c | l | a | s | s |
+		 *  0   1   2   3   4   5   6   7   8  9  10  11  12  13 14  15  16  17 18  19 20  21  22  23  24
+		 */
+		
+		//I am tall
+		System.out.println(classDescription.substring(9,10).toUpperCase()+ classDescription.substring(8, 9)
+		+ classDescription.charAt(12)+ classDescription.charAt(3)+ classDescription.charAt(8)
+		+ classDescription.charAt(5)+ classDescription.charAt(12)+ classDescription.charAt(20)
+		+ classDescription.charAt(20));
+		
+		//Try to get good rest
+		System.out.println(classDescription.substring(5, 6).toUpperCase() + classDescription.charAt(6) + classDescription.charAt(7)
+		+ classDescription.charAt(8) + classDescription.charAt(5) + classDescription.charAt(15)
+		+ classDescription.charAt(8) + classDescription.charAt(14) + classDescription.charAt(4)
+		+ classDescription.charAt(5) + classDescription.charAt(8) + classDescription.charAt(14)
+		+ classDescription.charAt(15) + classDescription.charAt(16) + classDescription.charAt(17)
+		+ classDescription.charAt(8) + classDescription.charAt(6) + classDescription.charAt(4)
+		+ classDescription.charAt(10) + classDescription.charAt(5));
+	
+		//Meet me at class
+		System.out.println(classDescription.substring(3, 4).toUpperCase() + classDescription.charAt(4) + classDescription.charAt(4)
+		+ classDescription.charAt(5) + classDescription.charAt(8)
+		+ classDescription.charAt(3) + classDescription.charAt(4)
+		+ classDescription.charAt(8) + classDescription.charAt(12) + classDescription.charAt(5)
+		+ classDescription.charAt(8) + classDescription.charAt(19)
+		+ classDescription.charAt(20) + classDescription.charAt(21)
+		+ classDescription.charAt(22) + classDescription.charAt(23));
+	
+		//It is oddly a game
+		System.out.println(classDescription.substring(9, 10).toUpperCase()+ classDescription.charAt(5)+ classDescription.charAt(8)
+		+ classDescription.charAt(9)+ classDescription.charAt(10)+ classDescription.charAt(8)+ classDescription.charAt(2)+ classDescription.charAt(17)
+		+ classDescription.charAt(17)+ classDescription.charAt(20)+ classDescription.charAt(7)+ classDescription.charAt(8)+ classDescription.charAt(12)
+		+ classDescription.charAt(8)+ classDescription.charAt(14)+ classDescription.charAt(12)+ classDescription.charAt(3)
+		+ classDescription.charAt(4));
+		
+		//I am last to get a retro style
+		System.out.println(classDescription.substring(9,10).toUpperCase() + classDescription.charAt(8)
+		+ classDescription.charAt(12) + classDescription.charAt(3) + classDescription.charAt(8)
+		+ classDescription.charAt(20) + classDescription.charAt(12) + classDescription.charAt(22)
+		+ classDescription.charAt(5) + classDescription.charAt(8) + classDescription.charAt(5)
+		+ classDescription.charAt(2) + classDescription.charAt(8) + classDescription.charAt(14)
+		+ classDescription.charAt(4) + classDescription.charAt(5) + classDescription.charAt(8)
+		+ classDescription.charAt(12) + classDescription.charAt(8) + classDescription.charAt(6)
+		+ classDescription.charAt(4) + classDescription.charAt(5) + classDescription.charAt(6)
+		+ classDescription.charAt(2) + classDescription.charAt(8) + classDescription.charAt(22)
+		+ classDescription.charAt(5) + classDescription.charAt(7) + classDescription.charAt(20)
+		+ classDescription.charAt(4));
+		
+		
+		
+		
 	}
+	
 
 }
