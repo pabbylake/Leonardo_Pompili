@@ -128,6 +128,9 @@ public class Microwave extends JFrame
    		 //displayJLabel - 31, 13, 120, 30 - put the text "12:00" on this label
    		 displayJLabel = this.setUpLabel(displayJLabel, "12:00", 31, 13, 120, 30);
    		 
+   		 //oneJButton - 23, 56, 45, 45 -     put the text "1" on this button
+   		 oneJButton = this.setUpButton(oneJButton, "one", 23, 56, 45, 45);
+   		 
    		 
 	 } // end method createUserInterface
    
