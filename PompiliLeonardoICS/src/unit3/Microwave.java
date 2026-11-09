@@ -24,9 +24,9 @@ package unit3;
  * fiveJButton - 68, 101, 45, 45 -   put the text "5" on this button✅
  * sixJButton - 113, 101, 45, 45 -   put the text "6" on this button✅
  * sevenJButton - 23, 146, 45, 45 -  put the text "7" on this button✅
- * eightJButton - 68, 146, 45, 45 -  put the text "8" on this button
- * nineJButton - 113, 146, 45, 45  - put the text "9" on this button
- * zeroJButton - 68, 191, 45, 45 -   put the text "0" on this button
+ * eightJButton - 68, 146, 45, 45 -  put the text "8" on this button✅
+ * nineJButton - 113, 146, 45, 45  - put the text "9" on this button✅
+ * zeroJButton - 68, 191, 45, 45 -   put the text "0" on this button✅
  * startJButton - 13, 252, 74, 24 -  put the text "Start" on this button
  * clearJButton - 100, 252, 74, 24 - put the text "Clear" on this button
  * 
@@ -155,7 +155,20 @@ public class Microwave extends JFrame
    		 
    		 //eightJButton - 68, 146, 45, 45
    		 eightJButton = this.setUpButton(eightJButton, "8", 68, 146, 45, 45);
-
+   		 
+   		 //nineJButton - 113, 146, 45, 45
+   		 nineJButton = this.setUpButton(nineJButton, "9", 113, 146, 45, 45);
+   		 
+   		 //zeroJButton - 68, 191, 45, 45 
+   		 zeroJButton = this.setUpButton(zeroJButton, "0", 68, 191, 45, 45);
+   		 
+   		 //startJButton - 13, 252, 74, 24 
+   		 startJButton = this.setUpButton(startJButton, "start", 13, 252, 74, 24);
+   		 
+   		 //clearJButton - 100, 252, 74, 24
+   		 clearJButton = this.setUpButton(clearJButton, "clear", 100, 252, 74, 24);
+   		 
+   		 
    		 //last
    		 setUpWindow();
    		 
