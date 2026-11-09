@@ -18,7 +18,7 @@ package unit3;
  * 
  * The buttons are listed with their bounds below.
  * oneJButton - 23, 56, 45, 45 -     put the text "1" on this button✅
- * twoJButton - 68, 56, 45, 45 -     put the text "2" on this button
+ * twoJButton - 68, 56, 45, 45 -     put the text "2" on this button✅
  * threeJButton - 113, 56, 45, 45 -  put the text "3" on this button
  * fourJButton - 23, 101, 45, 45 -   put the text "4" on this button
  * fiveJButton - 68, 101, 45, 45 -   put the text "5" on this button
@@ -131,6 +131,8 @@ public class Microwave extends JFrame
    		 //oneJButton - 23, 56, 45, 45 -     put the text "1" on this button
    		 oneJButton = this.setUpButton(oneJButton, "one", 23, 56, 45, 45);
    		 
+   		 //twoJbutton = 86, 56, 45, 45
+   		 twoJButton = this.setUpButton(twoJButton, "2", 68, 56, 45, 45);
    		 
 	 } // end method createUserInterface
    
