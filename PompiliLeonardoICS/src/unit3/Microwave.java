@@ -27,10 +27,10 @@ package unit3;
  * eightJButton - 68, 146, 45, 45 -  put the text "8" on this button✅
  * nineJButton - 113, 146, 45, 45  - put the text "9" on this button✅
  * zeroJButton - 68, 191, 45, 45 -   put the text "0" on this button✅
- * startJButton - 13, 252, 74, 24 -  put the text "Start" on this button
- * clearJButton - 100, 252, 74, 24 - put the text "Clear" on this button
+ * startJButton - 13, 252, 74, 24 -  put the text "Start" on this button✅
+ * clearJButton - 100, 252, 74, 24 - put the text "Clear" on this button✅
  * 
- * b. main - write the code to start the app and stop the app
+ * b. main - write the code to start the app and stop the app✅
  * 
  */
 
