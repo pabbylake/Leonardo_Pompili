@@ -19,7 +19,7 @@ package unit3;
  * The buttons are listed with their bounds below.
  * oneJButton - 23, 56, 45, 45 -     put the text "1" on this button✅
  * twoJButton - 68, 56, 45, 45 -     put the text "2" on this button✅
- * threeJButton - 113, 56, 45, 45 -  put the text "3" on this button
+ * threeJButton - 113, 56, 45, 45 -  put the text "3" on this button✅
  * fourJButton - 23, 101, 45, 45 -   put the text "4" on this button
  * fiveJButton - 68, 101, 45, 45 -   put the text "5" on this button
  * sixJButton - 113, 101, 45, 45 -   put the text "6" on this button
@@ -119,6 +119,10 @@ public class Microwave extends JFrame
    	 // create and position GUI components
    	 private void createUserInterface()
    	 {
+   		 
+   		 //first
+   		 setUpContentPane();
+   		 
    		 //doorJPanel - 16, 16, 350, 284
    		 doorJPanel = this.setUpPanel(doorJPanel, 16, 16, 350, 284);
 
@@ -129,10 +133,16 @@ public class Microwave extends JFrame
    		 displayJLabel = this.setUpLabel(displayJLabel, "12:00", 31, 13, 120, 30);
    		 
    		 //oneJButton - 23, 56, 45, 45 -     put the text "1" on this button
-   		 oneJButton = this.setUpButton(oneJButton, "one", 23, 56, 45, 45);
+   		 oneJButton = this.setUpButton(oneJButton, "1", 23, 56, 45, 45);
    		 
    		 //twoJbutton = 86, 56, 45, 45
    		 twoJButton = this.setUpButton(twoJButton, "2", 68, 56, 45, 45);
+   		 
+   		 //threeJButton - 113, 56, 45, 45 
+   		 threeJButton = this.setUpButton(threeJButton, "3", 113, 56, 45, 45)
+   		 
+   		 //last
+   		 setUpWindow();
    		 
 	 } // end method createUserInterface
    
@@ -142,6 +152,8 @@ public class Microwave extends JFrame
    	 public static void main( String[] args ) 
    	 {
     		Microwave app = new Microwave();
+    		app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    		
 
     	 } // end method main
 
