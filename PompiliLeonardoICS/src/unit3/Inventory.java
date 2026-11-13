@@ -2,6 +2,8 @@ package unit3;
 
 import java.awt.Color;
 import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -104,7 +106,20 @@ public class Inventory extends JFrame
 		this.setUpWindow();
 	}
 	
+	//Listens for a button click
+	private ActionListener createCalculationActionListen()
+	{
+		ActionListener listener = new ActionListener() //anonymous inner class
+		{
+			
+		};
+		
+	}
 	
+	private void calculateJButtonActionPerformed(ActionEvent event)
+	{
+		
+	}
 	
 	
 	public static void main(String[] args) 
