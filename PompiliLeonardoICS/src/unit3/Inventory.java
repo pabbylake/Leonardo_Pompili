@@ -94,8 +94,7 @@ public class Inventory extends JFrame
 		itemsJTextField = this.setUpTextField(itemsJTextField, "0", 140, 48, 40, 21);
 		totalResultJTextField = this.setUpTextField(totalResultJTextField, "", 244, 16, 86, 21);
 		
-		
-
+		calculateJButton = this.setUpButton(calculateJButton, "Calculate Total", 204, 48, 126, 24);
 		
 		
 		
@@ -104,6 +103,7 @@ public class Inventory extends JFrame
 		
 		this.setUpWindow();
 	}
+	
 	
 	
 	
