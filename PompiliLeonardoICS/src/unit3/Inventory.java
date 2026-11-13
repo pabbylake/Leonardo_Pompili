@@ -113,7 +113,7 @@ public class Inventory extends JFrame
 		{
 			public void actionPerformed(ActionEvent event)
 			{
-				
+				calculateJButtonActionPerformed(event);
 			}
 			
 		};
@@ -124,6 +124,9 @@ public class Inventory extends JFrame
 	
 	private void calculateJButtonActionPerformed(ActionEvent event)
 	{
+		int numberOfCartons = Integer.parseInt(cartonsJTextField.getText());
+		int numberOfItems = Integer.parseInt(itemsJTextField.getText());
+		int total = numberOfCartons * 
 		
 	}
 	
