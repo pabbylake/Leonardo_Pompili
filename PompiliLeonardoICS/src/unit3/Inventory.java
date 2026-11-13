@@ -4,10 +4,14 @@ import java.awt.Color;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
 
@@ -93,17 +97,14 @@ public class Inventory extends JFrame
 		totalJLabel = this.setUpLabel(totalJLabel, "Total:", 204, 16, 40, 21);
 		
 		cartonsJTextField = this.setUpTextField(cartonsJTextField, "0", 140, 16, 40, 21);
+		cartonsJTextField.addKeyListener(createTextFieldsKeyListener());
 		itemsJTextField = this.setUpTextField(itemsJTextField, "0", 140, 48, 40, 21);
+		cartonsJTextField.addKeyListener(createTextFieldsKeyListener());
+		
 		totalResultJTextField = this.setUpTextField(totalResultJTextField, "", 244, 16, 86, 21);
 		
 		calculateJButton = this.setUpButton(calculateJButton, "Calculate Total", 204, 48, 126, 24);
 		calculateJButton.addActionListener(createCalculationActionListener());
-		
-		
-		
-		
-		
-		
 		
 		this.setUpWindow();
 	}
@@ -126,15 +127,42 @@ public class Inventory extends JFrame
 	
 	private void calculateJButtonActionPerformed(ActionEvent event)
 	{
-		int numberOfCartons = Integer.parseInt(cartonsJTextField.getText());
-		int numberOfItems = Integer.parseInt(itemsJTextField.getText());
-		int total = numberOfCartons * numberOfItems;
+		try
+		{
+			int numberOfCartons = Integer.parseInt(cartonsJTextField.getText());
+			int numberOfItems = Integer.parseInt(itemsJTextField.getText());
+			int total = numberOfCartons * numberOfItems;
+			String totalString = String.valueOf(total);
+			totalResultJTextField.setText(totalString);
+		}
+		catch(Exception error)
+		{
+			JOptionPane.showMessageDialog(null,  "Please enter an integerl ONLY", 
+					"ERROR", JOptionPane.ERROR_MESSAGE);
+			
+		}
 		
-		String totalString = String.valueOf(total);
 		
-		totalResultJTextField.setText(totalString);
-		
-		
+	}
+	
+	
+	//Listens to the keyboard
+	private KeyListener createTextFieldsKeyListener()
+	{
+		KeyListener listener = new KeyAdapter()
+		{
+			public void keyPressed(KeyEvent event)
+			{
+				clearTotalField(event);
+			}
+		};
+		return listener;
+				
+	}
+	
+	private void clearTotalField(KeyEvent event)
+	{
+		totalResultJTextField.setText("");
 	}
 	
 	
