@@ -102,7 +102,7 @@ public class Inventory extends JFrame
 		cartonsJTextField.addKeyListener(createTextFieldsKeyListener());
 		
 		totalResultJTextField = this.setUpTextField(totalResultJTextField, "", 244, 16, 86, 21);
-		
+		totalResultJTextField.setEditable(false);
 		calculateJButton = this.setUpButton(calculateJButton, "Calculate Total", 204, 48, 126, 24);
 		calculateJButton.addActionListener(createCalculationActionListener());
 		
