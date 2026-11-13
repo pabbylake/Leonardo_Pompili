@@ -111,8 +111,14 @@ public class Inventory extends JFrame
 	{
 		ActionListener listener = new ActionListener() //anonymous inner class
 		{
+			public void actionPerformed(ActionEvent event)
+			{
+				
+			}
 			
 		};
+		
+		return listener;
 		
 	}
 	
