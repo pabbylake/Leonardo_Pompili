@@ -97,6 +97,8 @@ public class Inventory extends JFrame
 		totalResultJTextField = this.setUpTextField(totalResultJTextField, "", 244, 16, 86, 21);
 		
 		calculateJButton = this.setUpButton(calculateJButton, "Calculate Total", 204, 48, 126, 24);
+		calculateJButton.addActionListener(createCalculationActionListener());
+		
 		
 		
 		
@@ -107,7 +109,7 @@ public class Inventory extends JFrame
 	}
 	
 	//Listens for a button click
-	private ActionListener createCalculationActionListen()
+	private ActionListener createCalculationActionListener()
 	{
 		ActionListener listener = new ActionListener() //anonymous inner class
 		{
@@ -126,7 +128,12 @@ public class Inventory extends JFrame
 	{
 		int numberOfCartons = Integer.parseInt(cartonsJTextField.getText());
 		int numberOfItems = Integer.parseInt(itemsJTextField.getText());
-		int total = numberOfCartons * 
+		int total = numberOfCartons * numberOfItems;
+		
+		String totalString = String.valueOf(total);
+		
+		totalResultJTextField.setText(totalString);
+		
 		
 	}
 	
