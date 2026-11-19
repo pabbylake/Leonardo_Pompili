@@ -129,22 +129,22 @@ public class MortgageCalculator extends JFrame
 	   
 		
 	   // set up homeValueJLabel - text:-"Home value:" bounds:- 10, 16, 100, 21
-	   homeValueJLabel = 
+	   homeValueJLabel = this.setUpLabel(homeValueJLabel, "Home value", 10, 16, 100, 21);
 	   
 	   // set up homeValueJTextField - text:- "125000" bounds:-  212, 16, 100, 21 
-	   homeValueJTextField = 
+	   homeValueJTextField = this.setUpTextField(homeValueJTextField,"125000", 212, 16, 100, 21);
 	   
 	   // set up loanAmountJLabel - text:- "Loan Amount:" bounds choose appropriate bounds 
-	   loanAmountJLabel = 
+	   loanAmountJLabel = this.setUpLabel(loanAmountJLabel,"Loan Amount:", 10, 56, 100, 21);
 	   
 	   // set up loanAmountJTextField - text:- "100000" bounds 212, 16, 100, 21 
-	   loanAmountJTextField = 
+	   loanAmountJTextField = this.setUpTextField(loanAmountJTextField,"100000", 212, 56, 100, 21);
 	   
 	   // set up termJLabel - text:- "Term (years):" bounds 10, 96, 100, 21
-	   termJLabel = 
+	   termJLabel = this.
 	   
 	   // set up termJTextField - text:- "20" bounds 212, 96, 100, 21
-	   termJTextField = 
+	   termJTextField = this.
 	   
 	   // set up insuranceJLabel - text "Homeowner's insurance (yearly):" bounds 10, 136, 196, 21  
 	   insuranceJLabel = 
@@ -172,11 +172,14 @@ public class MortgageCalculator extends JFrame
 	   monthlyPaymentJTextField.setBorder( new BevelBorder( 1 ) );
 	   
 	   // set up calculateJButton - text:- "Calculate"  bounds 133, 296, 90, 23  
-	   calculateJButton = 
+	   calculateJButton = setUpButton(calculateJButton,
+               "Calculate", 133, 296, 90, 23);
+
 	  
 
 	   // set up clearJButton - text:- "Clear" bounds 237, 296, 75, 23 
-	   clearJButton = 
+			   clearJButton = setUpButton(clearJButton,
+		                "Clear", 237, 296, 75, 23);
 	   
 	   // set properties of application's window
 	   
@@ -232,16 +235,23 @@ public class MortgageCalculator extends JFrame
 	}
 	
 	private void clearJButtonActionPerformed(ActionEvent event)
-	{
-		
+	{ 
+		homeValueJTextField.setText("");
+        loanAmountJTextField.setText("");
+        termJTextField.setText("");
+        insuranceJTextField.setText("");
+        propertyTaxesJTextField.setText("");
+        interestJTextField.setText("");
+        monthlyPaymentJTextField.setText("");
 	}
-	
 	
 	
 	// main method
 	public static void main( String[] args )
 	{
 	   
+		MortgageCalculator application = new MortgageCalculator();
+		application.setVisible(true);
 	
 	} // end method main
 
