@@ -141,31 +141,31 @@ public class MortgageCalculator extends JFrame
 	   loanAmountJTextField = this.setUpTextField(loanAmountJTextField,"100000", 212, 56, 100, 21);
 	   
 	   // set up termJLabel - text:- "Term (years):" bounds 10, 96, 100, 21
-	   termJLabel = this.
+	   termJLabel = this.setUpLabel(termJLabel, "Term (years):", 10, 96, 100, 21);
 	   
 	   // set up termJTextField - text:- "20" bounds 212, 96, 100, 21
-	   termJTextField = this.
+	   termJTextField = this.setUpTextField(termJTextField,"20", 212, 96, 100, 21);
 	   
 	   // set up insuranceJLabel - text "Homeowner's insurance (yearly):" bounds 10, 136, 196, 21  
-	   insuranceJLabel = 
+	   insuranceJLabel = this.setUpLabel(insuranceJLabel,"Homeowner's insurance (yearly):",10, 136, 196, 21); 
 	   
 	   // set up insuranceJTextField- text:- "500" bounds 212, 136, 100, 21
-	   insuranceJTextField = 
+	   insuranceJTextField = this.setUpTextField(insuranceJTextField,"500", 212, 136, 100, 21);
 	   
 	   // set up propertyTaxesJLabel - text:- "Property taxes (yearly):" bounds 10, 176, 148, 21  
-	   propertyTaxesJLabel = 
+	   propertyTaxesJLabel = this.setUpLabel(propertyTaxesJLabel,"Property taxes (yearly):",10, 176, 148, 21);
 	   
 	   // set up propertyTaxesJTextField - text "2100" bounds  212, 176, 100, 21 
-	   propertyTaxesJTextField = 
+	   propertyTaxesJTextField = this. 
 	   
 	   // set up interestJLabel - text "Interest rate (percent):" bounds 10, 216, 140, 21 
-	   interestJLabel = 
+	   interestJLabel = this.
 	   
 	   // set up interestJTextField - text:- "3.5" bounds 212, 216, 100, 21 
-	   interestJTextField = 
+	   interestJTextField = this.
 	   
 	   // set up monthlyPaymentJLabel - text:- "Monthly payment:" bounds 10, 256, 120, 21
-	   monthlyPaymentJLabel = 
+	   monthlyPaymentJLabel = this.
 	   
 	   // set up monthlyPaymentJTextField - bounds 212, 256, 100, 21
 	   monthlyPaymentJTextField = this.setUpTextField(monthlyPaymentJTextField, "", 212, 256, 100, 21);
