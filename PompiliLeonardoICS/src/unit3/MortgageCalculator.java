@@ -11,6 +11,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import javax.swing.border.BevelBorder;
 
 public class MortgageCalculator extends JFrame
 {
@@ -156,24 +157,27 @@ public class MortgageCalculator extends JFrame
 	   propertyTaxesJLabel = this.setUpLabel(propertyTaxesJLabel,"Property taxes (yearly):",10, 176, 148, 21);
 	   
 	   // set up propertyTaxesJTextField - text "2100" bounds  212, 176, 100, 21 
-	   propertyTaxesJTextField = this. 
+	   propertyTaxesJTextField = this.setUpTextField(propertyTaxesJTextField,"2100", 212, 176, 100, 21); 
 	   
 	   // set up interestJLabel - text "Interest rate (percent):" bounds 10, 216, 140, 21 
-	   interestJLabel = this.
+	   interestJLabel = this.setUpLabel(interestJLabel,"Interest rate (percent):",10, 216, 140, 21);
+
 	   
 	   // set up interestJTextField - text:- "3.5" bounds 212, 216, 100, 21 
-	   interestJTextField = this.
+	   interestJTextField = this.setUpTextField(interestJTextField,"3.5", 212, 216, 100, 21);
 	   
 	   // set up monthlyPaymentJLabel - text:- "Monthly payment:" bounds 10, 256, 120, 21
-	   monthlyPaymentJLabel = this.
+	   monthlyPaymentJLabel = this.setUpLabel(monthlyPaymentJLabel,"Monthly payment:", 10, 256, 120, 21);
 	   
 	   // set up monthlyPaymentJTextField - bounds 212, 256, 100, 21
 	   monthlyPaymentJTextField = this.setUpTextField(monthlyPaymentJTextField, "", 212, 256, 100, 21);
-	   monthlyPaymentJTextField.setBorder( new BevelBorder( 1 ) );
+	   monthlyPaymentJTextField.setBorder(new BevelBorder(1));
+	   monthlyPaymentJTextField.setEditable(false);
+	   
 	   
 	   // set up calculateJButton - text:- "Calculate"  bounds 133, 296, 90, 23  
-	   calculateJButton = setUpButton(calculateJButton,
-               "Calculate", 133, 296, 90, 23);
+	   calculateJButton = setUpButton(calculateJButton, "Calculate", 133, 296, 90, 23);
+	   
 
 	  
 
