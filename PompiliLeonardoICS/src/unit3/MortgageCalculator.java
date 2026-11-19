@@ -85,7 +85,7 @@ public class MortgageCalculator extends JFrame
 	{
 		contentPane = getContentPane();
 		contentPane.setLayout(null);
-		contentPane.setBackground(Color.WHITE);
+		contentPane.setBackground(Color.BLUE);
 	}
 	
 	private JLabel setUpLabel(JLabel label, String text, int x, int y, int width, int height)
@@ -127,7 +127,7 @@ public class MortgageCalculator extends JFrame
 	public void createUserInterface()
 	{
 	   // get content pane and set its layout
-	   
+		setUpContentPane();
 		
 	   // set up homeValueJLabel - text:-"Home value:" bounds:- 10, 16, 100, 21
 	   homeValueJLabel = this.setUpLabel(homeValueJLabel, "Home value", 10, 16, 100, 21);
@@ -186,7 +186,7 @@ public class MortgageCalculator extends JFrame
 		                "Clear", 237, 296, 75, 23);
 	   
 	   // set properties of application's window
-	   
+	   setUpWindow();
 	} 
 	
 	
@@ -253,7 +253,7 @@ public class MortgageCalculator extends JFrame
 	// main method
 	public static void main( String[] args )
 	{
-	   
+		
 		MortgageCalculator application = new MortgageCalculator();
 		application.setVisible(true);
 	
