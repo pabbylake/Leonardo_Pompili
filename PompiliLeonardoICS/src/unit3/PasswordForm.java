@@ -2,6 +2,8 @@ package unit3;
 
 import java.awt.Color;
 import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -155,17 +157,80 @@ public class PasswordForm extends JFrame
 
 	        // Password
 	        passwordJLabel = this.setUpLabel(passwordJLabel,"Password:", 16, 48, 140, 21);
+	        passwordJPasswordField = setUpPasswordField(passwordJPasswordField, "", 172, 48, 140, 21);
 	        
-	        
+	        //Reenter password
+	        reenterPasswordJLabel = setUpLabel(reenterPasswordJLabel,"Reenter password:", 16, 80, 160, 21);
+	        reenterPasswordJPasswordField = setUpPasswordField(reenterPasswordJPasswordField, "", 172, 80, 140, 21);
 	
-	} 
+	        // Log in button
+	        logInJButton = setUpButton(logInJButton,"Log In", 240, 120, 72, 24);
+	        
+	        //Message label
+	        messageJLabel = setUpLabel(messageJLabel,"Messages:", 16, 136, 180, 21);
+	        
+	        //Message text area
+	        messageJTextArea = setUpTextArea(messageJTextArea,"", 16, 160, 290, 40);
+	        
+	        //Save button
+	        saveJButton = setUpButton(saveJButton,"Save", 58, 248, 72, 24);
+
+	        //Log out button
+	        logOutJButton = setUpButton(logOutJButton,"Log Out", 146, 248, 78, 24);
+
+	        //Clear button
+	        clearJButton = setUpButton(clearJButton,"Clear", 240, 248, 72, 24);
+	        
+	        //Log in action
+	        logInJButton.addActionListener(new ActionListener()
+	        	{
+	            public void actionPerformed(ActionEvent event)
+	            	{
+		          messageJTextArea.setText(userNameJTextField.getText() + " logged in");
+
+	            	}  
+	        	});
+	        //Save action
+	        saveJButton.addActionListener(new ActionListener()
+	        {
+	            public void actionPerformed(ActionEvent event)
+	            {
+	                messageJTextArea.setText(userNameJTextField.getText() + " information saved");
+	            }
+	        });
+	        //Log out action
+	        logOutJButton.addActionListener(new ActionListener()
+	        {
+	            public void actionPerformed(ActionEvent event)
+	            {
+	                messageJTextArea.setText(userNameJTextField.getText() + " logged out");
+	            }
+	        });
+	        //Clear action
+	        clearJButton.addActionListener(new ActionListener()
+	        {
+	            public void actionPerformed(ActionEvent event)
+	            {
+	                userNameJTextField.setText("");
+	                passwordJPasswordField.setText("");
+	                reenterPasswordJPasswordField.setText("");
+	                messageJTextArea.setText("All cleared");
+	            }
+	        });
+
+	        
+	    
+	        //Set up window
+	        setUpWindow();
+	    }
 	
 	
 	
 	//13. Complete the main method
 	public static void main( String[] args )
 	{
-	   
+		PasswordForm application = new PasswordForm();
+        application.setVisible(true);
 	} 
 
 } // end class Password
