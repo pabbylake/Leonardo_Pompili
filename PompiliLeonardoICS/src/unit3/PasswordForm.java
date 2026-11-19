@@ -117,7 +117,14 @@ public class PasswordForm extends JFrame
 		 
 	 }
 	//7. set up window - bounds 400, 400, 336, 312
-	
+	 private void setUpWindow()
+	    {
+	        setTitle("Password Form");
+	        setBounds(400, 400, 336, 312);
+	        setResizable(false);
+	        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	        setVisible(true);
+	    }
 	
 	/*
 	 * Finally you have to create the action performed methods for all of the buttons and add the correct
@@ -138,9 +145,18 @@ public class PasswordForm extends JFrame
 	//12. complete this method to create and position all GUI components
 	//NOTE: The bounds are written as comments next to each component
 	public void createUserInterface()
-	{
-	   
-	 
+	    {
+	        setUpContentPane();
+
+	        // User name
+	        userNameJLabel = this.setUpLabel(userNameJLabel,"User name:", 16, 16, 110, 21);
+
+	        userNameJTextField = this.setUpTextField(userNameJTextField,"", 172, 16, 140, 21);
+
+	        // Password
+	        passwordJLabel = this.setUpLabel(passwordJLabel,"Password:", 16, 48, 140, 21);
+	        
+	        
 	
 	} 
 	
